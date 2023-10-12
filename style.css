@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "game";
+    src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button:focus {
+    outline: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    /* Dark text color */
+}
+
+body {
+    background-color: #222738;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    /* Dark text color */
+}
+
+canvas {
+    background-color: #181825;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#ui {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    /* Increased font size */
+    flex-flow: column;
+    margin-left: 20px;
+    /* Increased margin for better separation */
+}
+
+h2 {
+    font-weight: 300;
+    /* Lighter font weight */
+    transform: rotate(270deg);
+    margin-top: 20px;
+    /* Increased margin for better alignment */
+    color: #6e7888;
+    /* Different text color */
+}
+
+#score {
+    font-size: 36px;
+    /* Larger font size */
+    font-weight: 600;
+    /* Slightly bolder text */
+    margin-top: 15px;
+    /* Adjusted margin for better alignment */
+    color: #4cffd7;
+    /* Light blue color for contrast */
+}
+
+.noselect {
+    user-select: none;
+}
+
+#replay {
+    font-size: 14px;
+    /* Increased font size */
+    padding: 12px 24px;
+    /* Increased padding for a larger button */
+    background: #4cffd7;
+    /* Light blue button background */
+    border: none;
+    color: #222738;
+    /* White text color */
+    border-radius: 30px;
+    /* Rounder button shape */
+    font-weight: 600;
+    /* Slightly bolder text */
+    transform: rotate(270deg);
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    /* Smooth transition */
+}
+
+#replay:hover {
+    background: #a6aab5;
+    color: #222738;
+    /* Dark text color on hover */
+    transition: all 250ms ease-in-out;
+}
+
+#replay svg {
+    margin-right: 8px;
+}
+
+@media (max-width: 600px) {
+    #replay {
+        margin-bottom: 20px;
+    }
+
+    #replay,
+    h2 {
+        transform: rotate(0deg);
+    }
+
+    #ui {
+        flex-flow: row wrap;
+        margin-bottom: 20px;
+    }
+
+    #score {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+
+    .container {
+        flex-flow: column wrap;
+    }
+}
+
+#author {
+    width: 100%;
+    bottom: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #6e7888;
+    text-transform: uppercase;
+    padding-left: 35px;
+}
+
+#author span {
+    font-size: 12px;
+    /* Increased font size */
+    margin-left: 20px;
+    color: #4cffd7;
+    /* Light blue color */
+    letter-spacing: 4px;
+}
+
+#author h1 {
+    font-size: 28px;
+    /* Larger font size */
+    font-weight: 800;
+    /* Bolder text */
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
